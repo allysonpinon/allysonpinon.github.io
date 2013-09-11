@@ -33,6 +33,6 @@ a {
 	text-decoration: none;
 }
 
-images img {
+.images {
 	float: left; border: none;
 }
