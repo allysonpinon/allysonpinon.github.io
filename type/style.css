@@ -1,5 +1,5 @@
 body{
-	background: pink;
+	background: white;
 	font-family: Helvetica, Arial, serif;
 }
 
@@ -10,7 +10,7 @@ body{
 }
 
 .my-essay p{
-	color: red;
+	color: black;
 }
 
 p{
