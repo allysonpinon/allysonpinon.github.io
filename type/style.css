@@ -4,7 +4,7 @@ body{
 }
 
 .my-essay {
-	margin: 20px (2em) 300px (3em);
+	margin: 2em;
 	font-size: 16px;
 	line-height: 1.7em;
 }
@@ -21,8 +21,7 @@ h1, h2{
 	font-family: Arial;
 }
 h1{
-	font-size: 20px (100%) (1em);
-	text-transform: uppercase;
+	font-size: 20px;
 	letter-spacing: px;
 	font-weight: bold;
 	text-align: center;
