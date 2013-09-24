@@ -1,11 +1,11 @@
 body{
-	background: white;
+	background: #00000;
 	font-family: Helvetica, Arial, serif;
 }
 
 .my-essay {
 	margin: 20px (2em) 300px (3em);
-	font-size: 30px;
+	font-size: 16px;
 	line-height: 1.7em;
 }
 
@@ -41,8 +41,8 @@ i{
 
 .emphasis{
 	font-style: italic;
-	color: green;
-	text-decoration: underline;
+	color: black;
+	
 }
 
 blockquote{
