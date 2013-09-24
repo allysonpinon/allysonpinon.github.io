@@ -1,13 +1,12 @@
 body {
 	background: #ffffff;
 	font-size: 18px;
-	font-family: "metalista-web";
+	font-family: helvetica, Arial;
 
 }
 h1{
 	color: #000000;
-    style: "text-align:right"
-    font-family: helvetica, Arial;
+    style: "text-align:right";
 }
 
 .special-subheading {
