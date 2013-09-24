@@ -1,5 +1,5 @@
 body{
-	background: #00000;
+	background: #ffffff;
 	font-family: Helvetica, Arial, serif;
 }
 
@@ -10,7 +10,7 @@ body{
 }
 
 .my-essay p{
-	color: black;
+	color: #000000;
 }
 
 p{
@@ -21,17 +21,16 @@ h1, h2{
 	font-family: Arial;
 }
 h1{
-	font-size: 2em;
-}
-
-h2 {
-	font-size: 30px (100%) (1em);
+	font-size: 20px (100%) (1em);
 	text-transform: uppercase;
 	letter-spacing: px;
 	font-weight: bold;
 	text-align: center;
 	margin: 3em 0 1.5 em 0;
 }
+
+h2 {
+	}
 
 i{
 	font-style: italic;
