@@ -1,13 +1,14 @@
 body{
 	background: #ffffff;
 	font-family: Helvetica, Arial, serif;
+	margin-top:100px;
+	margin-bottom:100px;
+	margin-right:50px;
+	margin-left:50px; 
 }
 
 .my-essay {
- margin-top:100px;
-margin-bottom:100px;
-margin-right:50px;
-margin-left:50px; ;
+ 
 	font-size: 16px;
 	line-height: 1.7em;
 }
