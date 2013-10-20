@@ -1,0 +1,99 @@
+body {
+	
+	background: green;
+	text-align: right
+}
+
+.purple;{
+	background:  purple;
+}
+
+img {
+	width:  400px;
+	display: block;   
+	position:  static;
+	margin: 30 px auto;
+}
+
+img.puppy {
+	width: 500px;
+	posiion: fixed;
+	z-index: 1000; (layers 0-bottom, 1000-top)
+	width: 300px;
+}
+
+div.babyanimalfight{
+	position: relative;
+}
+
+div.overlappictures img.kitten {
+	width:  180px;
+	position:  absolute;
+	bottom: 10%;
+	right: 30%;
+	
+}
+
+div.thumbnail{
+	background: rgb (212, 212,212 );
+	width: 400px
+	height: 400px;
+	float: left;
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+
+}
+
+div.thumbnail img{
+	width:  180px;
+	position: absolute;
+	left: 180px;
+	top: 70px;
+	z-index: 10;
+}
+
+div.thumbmail a {
+	font-size: 2.5em;
+	font-family: Courier,sans-serif;
+	text-decoration: none;
+	color: #000;
+	position: absolute;
+	top: 180px;
+	left: 220px;
+	width: 150px;
+	z-index: 100;
+	background: #fff;
+	padding: 10px;
+	opacity: 0.5;
+}
+
+div.thumbnail a:hover {
+	opacity: 1;
+}
+
+element{
+	position: relative;
+	
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 30px;
+	background:  #000;
+	z-index: 1000;
+	text-align: center;
+}
+
+.nav a {
+	color: #fff;
+	margin: 0 40px;
+
+}
+
+.nav a:hover {
+	color:  pink;
+}
