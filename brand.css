@@ -4,4 +4,24 @@ body{
 	text-align:  center;
 }
 	
+.nav {
+	position: fixed;
+	top: 10em;
+	right: 0;
+	left: 0;
+	height: 30px;
+	background:  #000;
+	z-index: 1000;
+	text-align: center;
 	
+}
+
+.nav a {
+	color: #fff;
+	margin: 0 40px;
+
+}
+
+.nav a:hover {
+	color:  pink;
+}	
