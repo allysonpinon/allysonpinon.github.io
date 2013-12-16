@@ -5,7 +5,7 @@ body{
 }
 	
 .nav {
-	position: fixed;
+	
 	top: 10em;
 	right: 0;
 	left: 0;
@@ -26,65 +26,3 @@ body{
 	color:  pink;
 }	
 
-  // Set up fixed navbar
-  var prevScrollLeft = 0; // used to compare current position to previous position of horiz scroll
-  $(window).scroll(function(event) {
-    if ($('#side-nav').length == 0) return;
-    if (event.target.nodeName == "DIV") {
-      // Dump scroll event if the target is a DIV, because that means the event is coming
-      // from a scrollable div and so there's no need to make adjustments to our layout
-      return;
-    }
-    var scrollTop = $(window).scrollTop();    
-    var headerHeight = $('#header').outerHeight();
-    var subheaderHeight = $('#nav-x').outerHeight();
-    var searchResultHeight = $('#searchResults').is(":visible") ? 
-                             $('#searchResults').outerHeight() : 0;
-    var totalHeaderHeight = headerHeight + subheaderHeight + searchResultHeight;
-    var navBarShouldBeFixed = scrollTop > totalHeaderHeight;
-
-    var scrollLeft = $(window).scrollLeft();
-    // When the sidenav is fixed and user scrolls horizontally, reposition the sidenav to match
-    if (navBarIsFixed && (scrollLeft != prevScrollLeft)) {
-      updateSideNavPosition();
-      prevScrollLeft = scrollLeft;
-    }
-
-    // Don't continue if the header is sufficently far away 
-    // (to avoid intensive resizing that slows scrolling)
-    if (navBarIsFixed && navBarShouldBeFixed) {
-      return;
-    }
-
-    if (navBarIsFixed != navBarShouldBeFixed) {
-      if (navBarShouldBeFixed) {
-        // make it fixed
-        var width = $('#devdoc-nav').width();
-        $('#devdoc-nav')
-            .addClass('fixed')
-            .css({'width':width+'px'})
-            .prependTo('#body-content');
-        // add neato "back to top" button
-        $('#devdoc-nav a.totop').css({'display':'block','width':$("#nav").innerWidth()+'px'});
-
-        // update the sidenaav position for side scrolling
-        updateSideNavPosition();
-      } else {
-        // make it static again
-        $('#devdoc-nav')
-            .removeClass('fixed')
-            .css({'width':'auto','margin':''})
-            .prependTo('#side-nav');
-        $('#devdoc-nav a.totop').hide();
-      }
-      navBarIsFixed = navBarShouldBeFixed;
-    } 
-
-    resizeNav(250); // pass true in order to delay the scrollbar re-initialization for performance
-  });
-
-
-  var navBarLeftPos;
-  if ($('#devdoc-nav').length) {
-    setNavBarLeftPos();
-  }
