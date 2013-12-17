@@ -57,7 +57,7 @@ blockquote{
 	
 	.nav {
 		position: fixed;
-		top: 10em;
+		top: 0em;
 		right: 0;
 		left: 0;
 		height: 30px;

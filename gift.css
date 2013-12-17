@@ -22,7 +22,7 @@ a:link {color: navy;}
 
 .nav {
 	position: fixed;
-	top: 10em;
+	top: 0 em;
 	right: 0;
 	left: 0;
 	height: 30px;
